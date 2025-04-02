@@ -1,9 +1,10 @@
+
 CREATE DATABASE TaskManager;
 GO
 USE TaskManager;
 GO
 
--- Users Table
+
 CREATE TABLE Users (
     UserID INT IDENTITY(1,1) PRIMARY KEY,
     FullName NVARCHAR(100) NOT NULL,
@@ -13,7 +14,7 @@ CREATE TABLE Users (
 );
 GO
 
--- Projects Table
+
 CREATE TABLE Projects (
     ProjectID INT IDENTITY(1,1) PRIMARY KEY,
     Name NVARCHAR(255) NOT NULL,
@@ -24,7 +25,7 @@ CREATE TABLE Projects (
 );
 GO
 
--- Tasks Table
+
 CREATE TABLE Tasks (
     TaskID INT IDENTITY(1,1) PRIMARY KEY,
     Title NVARCHAR(255) NOT NULL,
@@ -36,6 +37,6 @@ CREATE TABLE Tasks (
     AssignedTo INT NULL,
     CreatedAt DATETIME DEFAULT GETDATE(),
     FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID) ON DELETE CASCADE,
-    FOREIGN KEY (AssignedTo) REFERENCES Users(UserID) ON DELETE SET NULL
+    FOREIGN KEY (AssignedTo) REFERENCES Users(UserID) 
 );
 GO
