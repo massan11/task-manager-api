@@ -31,4 +31,7 @@ SELECT * FROM Tasks;
 
 SELECT * FROM Tasks WHERE ProjectID = 3;
 
+UPDATE Tasks 
+SET Status = 'Completed' 
+WHERE TaskID = 5;
 
