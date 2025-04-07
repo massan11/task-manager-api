@@ -9,3 +9,4 @@ UPDATE Users
 SET Email = 'newemail@example.com' 
 WHERE UserID = 1;
 
+DELETE FROM Users WHERE UserID = 1;
