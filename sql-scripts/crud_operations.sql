@@ -35,3 +35,5 @@ UPDATE Tasks
 SET Status = 'Completed' 
 WHERE TaskID = 5;
 
+DELETE FROM Tasks WHERE TaskID = 5;
+
