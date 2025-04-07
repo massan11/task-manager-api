@@ -27,4 +27,6 @@ DELETE FROM Projects WHERE ProjectID = 1;
 INSERT INTO Tasks (Title, Description, Status, Priority, DueDate, ProjectID, AssignedTo) 
 VALUES ('Fix API Bug', 'Fix a critical issue in API', 'To Do', 'High', '2025-04-10', 3, 2);
 
+SELECT * FROM Tasks;
+
 
