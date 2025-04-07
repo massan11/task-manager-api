@@ -29,4 +29,6 @@ VALUES ('Fix API Bug', 'Fix a critical issue in API', 'To Do', 'High', '2025-04-
 
 SELECT * FROM Tasks;
 
+SELECT * FROM Tasks WHERE ProjectID = 3;
+
 
