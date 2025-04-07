@@ -22,3 +22,6 @@ UPDATE Projects
 SET Name = 'Updated Project Name' 
 WHERE ProjectID = 1;
 
+DELETE FROM Projects WHERE ProjectID = 1;
+
+
