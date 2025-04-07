@@ -17,3 +17,8 @@ VALUES ('API Development', 'Building a REST API', 2);
 SELECT * FROM Projects;
 
 SELECT * FROM Projects WHERE CreatedBy = 2;
+
+UPDATE Projects 
+SET Name = 'Updated Project Name' 
+WHERE ProjectID = 1;
+
