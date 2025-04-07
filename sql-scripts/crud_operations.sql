@@ -15,3 +15,5 @@ INSERT INTO Projects (Name, Description, CreatedBy)
 VALUES ('API Development', 'Building a REST API', 2);
 
 SELECT * FROM Projects;
+
+SELECT * FROM Projects WHERE CreatedBy = 2;
