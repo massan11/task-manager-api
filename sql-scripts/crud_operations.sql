@@ -13,3 +13,5 @@ DELETE FROM Users WHERE UserID = 1;
 
 INSERT INTO Projects (Name, Description, CreatedBy) 
 VALUES ('API Development', 'Building a REST API', 2);
+
+SELECT * FROM Projects;
